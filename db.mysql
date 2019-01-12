@@ -1,0 +1,34 @@
+CREATE DATABASE live_searchdumdum;
+
+# LIVE マスタ
+CREATE TABLE `m_live` (
+   `live_no` int(11) NOT NULL AUTO_INCREMENT COMMENT 'sequnece',
+   `live_name` varchar(128) NOT NULL,
+   `disp_name` varchar(128) NOT NULL,
+   `live_datetime` datetime NOT NULL,
+   `disp_start_datetme` datetime DEFAULT NULL,
+   `disp_end_datetime` datetime DEFAULT NULL,
+   `live_place` int(11) NOT NULL,
+   `area_type` int(11) NOT NULL,
+   `price` int(11) NOT NULL,
+   `live_info` longtext,
+   `contact` varchar(128) DEFAULT NULL,
+   PRIMARY KEY (`live_no`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+ # ライブハウスマスタ
+ CREATE TABLE `m_place` (
+   `place_no` int(11) NOT NULL AUTO_INCREMENT,
+   `place_name` varchar(128) NOT NULL,
+   `area_type` int(11) NOT NULL,
+   PRIMARY KEY (`place_no`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+ # エリア区分マスタ
+ CREATE TABLE `m_area` (
+   `area_no` int(11) NOT NULL,
+   `area_name` varchar(128) NOT NULL,
+   PRIMARY KEY (`area_no`)
+ ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+ 
+ 
