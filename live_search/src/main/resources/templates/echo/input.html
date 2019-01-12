@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Insert title here</title>
+</head>
+<body>
+<h2>入力画面</h2>
+<p>テキストを入力してください</p>
+<form action="/echo" th:object="${echoform}" method="post">
+  <input type="text" th:field="*{text}" />
+  <input type="submit" value="send" />
+</form>
+</body>
+</html>
