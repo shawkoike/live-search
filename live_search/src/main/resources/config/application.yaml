@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/livesearch?useSSL=false
+    username: koike
+    password: P@assw0rd!
+    driverClassName: com.mysql.jdbc.Driver
