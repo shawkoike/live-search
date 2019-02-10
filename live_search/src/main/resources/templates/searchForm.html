@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>【ライブ出演検索】MOHANAK</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="http://kanasami.com/static/assets/css/searchForm.css" />
+		<noscript><link rel="stylesheet" href="http://kanasami.com/static/assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+		<div id="page-wrapper">
+
+		  <div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">MOHANAK</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="/home">Home</a></li>
+								<li><a href="/search">ライブ検索</a></li>
+								<li><a href="/about">当サイトについて</a></li>
+								<li><a href="#footer">お問い合わせ</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Banner -->
+				<div class="wrapper">
+					<div class="inner">
+						<section>
+							<h2 class="major">ライブ検索</h2>
+							<form method="post" action="/live/result">
+								<div class="row gtr-uniform">
+									<div style="width:100%;"><p><strong>開催地</strong></p></div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-low" name="place" value="tokyo" checked="checked" />
+										<label for="demo-priority-low">東京</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-normal" name="place" value="nagoya" />
+										<label for="demo-priority-normal">名古屋</label>
+									</div>
+									<div class="col-4 col-12-small">
+										<input type="radio" id="demo-priority-high" name="place" value="other" />
+										<label for="demo-priority-high">その他</label>
+									</div>
+
+									<div style="width:100%;margin-top: 30px;"><p><strong>開催日</strong></p>
+										<input type="text" id="input1" name="date"/>
+									</div>
+
+									<br /><br />
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="検索" class="primary" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+			<script>
+				$(function() {
+					$.datepicker.setDefaults($.datepicker.regional["ja"]);
+					$("#input1").datepicker();
+				});
+			</script>
+
+		</div>
+	</body>
+</html>

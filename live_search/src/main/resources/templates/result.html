@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>【ライブ出演検索】MOHANAK</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="http://kanasami.com/static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="http://kanasami.com/static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">MOHANAK</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="/home">Home</a></li>
+								<li><a href="/search">ライブ検索</a></li>
+								<li><a href="/about">当サイトについて</a></li>
+								<li><a href="#footer">お問い合わせ</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+
+						<!-- One -->
+							<section id="one" class="wrapper spotlight style1">
+								<div class="inner">
+									<a href="#" class="image"><!-- <img src="images/pic01.jpg" alt="" /> --></a>
+									<div class="content">
+										<h2 class="major">ライブ検索</h2>
+										<p>東京・名古屋のライブハウスで行われる出演可能なライブを検索します。</p>
+										<a href="/live/search" class="special">ライブ検索に進む</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="wrapper alt spotlight style2">
+								<div class="inner">
+									<div class="content">
+										<h2 class="major">当サイトについて</h2>
+										<p>当サイトの紹介及びライブまでの流れはこちら。</p>
+										<a href="/live/about" class="special">当サイトについて</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Three -->
+							<section id="three" class="wrapper spotlight style3">
+								<div class="inner">
+									<div class="content">
+										<h2 class="major">運営会社概要</h2>
+										<p>当サイト運営会社情報はこちら</p>
+										<a href="http://mohanak.com/" class="special">MOHANAK公式HP</a>
+									</div>
+								</div>
+							</section>
+
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major">新着情報</h2>
+									<p></p>
+									<section class="features">
+										<article>
+											<h3 class="major" th:text="${live1.title}">タイトル</h3>
+											日時：<p th:text="${live1.when}">日時</p>
+											場所：<p th:text="${live1.where}">場所</p>
+											詳細：<p th:text="${live1.content}">詳細</p>
+											<a href="#" th:href="'/info/' + ${live1.sequence}" class="special">詳しくはこちら</a>
+										</article>
+									</section>
+									<ul class="actions">
+										<li><a href="/search" class="button">全てのライブ情報を見る</a></li>
+									</ul>
+								</div>
+							</section>
+
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="http://kanasami.com/static/assets/js/jquery.min.js"></script>
+			<script src="http://kanasami.com/static/assets/js/jquery.scrollex.min.js"></script>
+			<script src="http://kanasami.com/static/assets/js/browser.min.js"></script>
+			<script src="http://kanasami.com/static/assets/js/breakpoints.min.js"></script>
+			<script src="http://kanasami.com/static/assets/js/util.js"></script>
+			<script src="http://kanasami.com/static/assets/js/main.js"></script>
+
+	</body>
+</html>
